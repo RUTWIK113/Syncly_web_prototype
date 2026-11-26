@@ -6,15 +6,6 @@
 
 ---
 
-## Headline results
-
-- **Event recall** (events that got a card ÷ events announced): **32 / 33**. The one miss: a message with two rounds in it ("PPT today… followed by OA tomorrow") got only one card.
-- **Critical error rate** (cards with a wrong date or time ÷ cards created): **0 / 32**
-- **Auto-sync rate** (events synced correctly with no edit ÷ events announced): **25 / 33**. The rest needed one tap in Pending.
-- **Capture rate** (messages Syncly received ÷ messages posted in the group): only measurable with real users. See limitations.
-
----
-
 ## 1. What "wrong" means for this product
 
 Not every mistake costs the same. A student who shows up an hour late to an OA has lost the opportunity. A student who has to tap "Update" once has lost five seconds. So every failure is scored by what it costs the student:
@@ -112,8 +103,6 @@ Tested at 1920×1080, 1366×768 (laptop), 720 px (narrow browser pane) and 390×
 
 ## 6. What these evals do *not* prove (honest limits)
 
-- **If the WhatsApp group is open on the phone, WhatsApp sends no notification**, so Syncly never sees that message. Found in real use of the Android app.
-- **Messages with several dates or times** can attach them to the wrong event. Two such cases were fixed (see above); messages with two rounds in them are still only partly handled.
 - **I wrote the 40 test notices myself.** They are modelled on the kind of messages in our placement groups, but they are not a sample of real messages. The next step is to export ~200 real notices from MEUG Placements and score them the same way.
 - **The Gemini tier was not tested with a live key.** Only its fallback path (no key, or no network) was tested. Its accuracy on messy and Hinglish notices is still untested.
 - **40 is a small set.** "0 Tier 1 errors" means none were found in 40 cases, not that none exist.
